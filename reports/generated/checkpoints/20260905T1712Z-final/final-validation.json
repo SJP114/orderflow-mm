@@ -1,0 +1,159 @@
+{
+  "checkpoint": "/Users/mi_qi88sohu.com/Documents/ChatGPT/\u91cf\u5316\u7ebf\u2014\u2014\u8bad\u7ec3\uff0c\u9879\u76ee\u5f00\u53d1\u4e0e\u6295\u9012/reports/generated/checkpoints/20260905T1712Z-final/checkpoint.json",
+  "validated_at": "2026-09-07T12:20:01.595878+08:00",
+  "passed": true,
+  "decision": "research_artifact_validated",
+  "strategy_conclusion": "not_supported",
+  "checks_passed": 29,
+  "checks_total": 29,
+  "checks": [
+    {
+      "name": "research-only scope",
+      "passed": true,
+      "detail": "checkpoint must use closed UTC hours and must not submit live orders"
+    },
+    {
+      "name": "valid coverage arithmetic",
+      "passed": true,
+      "detail": "87570 seconds = 24.325000 hours"
+    },
+    {
+      "name": "valid-data gate",
+      "passed": true,
+      "detail": "observed 24.325 hours; required 24.000 hours"
+    },
+    {
+      "name": "bar eligibility reconciliation",
+      "passed": true,
+      "detail": "282197 total - 194627 excluded = 87570 valid seconds"
+    },
+    {
+      "name": "bar key uniqueness",
+      "passed": true,
+      "detail": "duplicate one-second keys: 0"
+    },
+    {
+      "name": "model feature completeness",
+      "passed": true,
+      "detail": "all allowlisted causal features must be present"
+    },
+    {
+      "name": "raw structural quality",
+      "passed": true,
+      "detail": "book/trade uniqueness, domain, and quote-order checks must pass"
+    },
+    {
+      "name": "model artifact set",
+      "passed": true,
+      "detail": "found model artifacts: ['baseline_1s', 'baseline_5s', 'walk_forward_1s', 'walk_forward_5s']"
+    },
+    {
+      "name": "artifact exists: baseline_1s",
+      "passed": true,
+      "detail": "/Users/mi_qi88sohu.com/Documents/ChatGPT/\u91cf\u5316\u7ebf\u2014\u2014\u8bad\u7ec3\uff0c\u9879\u76ee\u5f00\u53d1\u4e0e\u6295\u9012/reports/generated/checkpoints/20260905T1712Z-final/logistic-baseline-1s.json"
+    },
+    {
+      "name": "causal features: baseline_1s",
+      "passed": true,
+      "detail": "features: ['spread_bps', 'book_imbalance', 'microprice_deviation_bps', 'trade_imbalance_1s', 'trade_imbalance_5s', 'trade_intensity_5s', 'log_mid_return_1s', 'realized_volatility_10s']"
+    },
+    {
+      "name": "chronological split: baseline_1s",
+      "passed": true,
+      "detail": "horizon and embargo: 1s"
+    },
+    {
+      "name": "artifact exists: baseline_5s",
+      "passed": true,
+      "detail": "/Users/mi_qi88sohu.com/Documents/ChatGPT/\u91cf\u5316\u7ebf\u2014\u2014\u8bad\u7ec3\uff0c\u9879\u76ee\u5f00\u53d1\u4e0e\u6295\u9012/reports/generated/checkpoints/20260905T1712Z-final/logistic-baseline-5s.json"
+    },
+    {
+      "name": "causal features: baseline_5s",
+      "passed": true,
+      "detail": "features: ['spread_bps', 'book_imbalance', 'microprice_deviation_bps', 'trade_imbalance_1s', 'trade_imbalance_5s', 'trade_intensity_5s', 'log_mid_return_1s', 'realized_volatility_10s']"
+    },
+    {
+      "name": "chronological split: baseline_5s",
+      "passed": true,
+      "detail": "horizon and embargo: 5s"
+    },
+    {
+      "name": "artifact exists: walk_forward_1s",
+      "passed": true,
+      "detail": "/Users/mi_qi88sohu.com/Documents/ChatGPT/\u91cf\u5316\u7ebf\u2014\u2014\u8bad\u7ec3\uff0c\u9879\u76ee\u5f00\u53d1\u4e0e\u6295\u9012/reports/generated/checkpoints/20260905T1712Z-final/logistic-walk-forward-1s.json"
+    },
+    {
+      "name": "causal features: walk_forward_1s",
+      "passed": true,
+      "detail": "features: ['spread_bps', 'book_imbalance', 'microprice_deviation_bps', 'trade_imbalance_1s', 'trade_imbalance_5s', 'trade_intensity_5s', 'log_mid_return_1s', 'realized_volatility_10s']"
+    },
+    {
+      "name": "walk-forward chronology: walk_forward_1s",
+      "passed": true,
+      "detail": "folds: 35; horizon: 1s"
+    },
+    {
+      "name": "walk-forward row reconciliation: walk_forward_1s",
+      "passed": true,
+      "detail": "fold rows: 75964; OOS rows: 75964; confusion rows: 75964"
+    },
+    {
+      "name": "artifact exists: walk_forward_5s",
+      "passed": true,
+      "detail": "/Users/mi_qi88sohu.com/Documents/ChatGPT/\u91cf\u5316\u7ebf\u2014\u2014\u8bad\u7ec3\uff0c\u9879\u76ee\u5f00\u53d1\u4e0e\u6295\u9012/reports/generated/checkpoints/20260905T1712Z-final/logistic-walk-forward-5s.json"
+    },
+    {
+      "name": "causal features: walk_forward_5s",
+      "passed": true,
+      "detail": "features: ['spread_bps', 'book_imbalance', 'microprice_deviation_bps', 'trade_imbalance_1s', 'trade_imbalance_5s', 'trade_intensity_5s', 'log_mid_return_1s', 'realized_volatility_10s']"
+    },
+    {
+      "name": "walk-forward chronology: walk_forward_5s",
+      "passed": true,
+      "detail": "folds: 35; horizon: 5s"
+    },
+    {
+      "name": "walk-forward row reconciliation: walk_forward_5s",
+      "passed": true,
+      "detail": "fold rows: 75441; OOS rows: 75441; confusion rows: 75441"
+    },
+    {
+      "name": "simulation scenario matrix",
+      "passed": true,
+      "detail": "found scenarios: [('signal_inventory', 'queue_aware'), ('signal_inventory', 'touch'), ('symmetric', 'queue_aware'), ('symmetric', 'touch')]"
+    },
+    {
+      "name": "simulation artifact: symmetric/touch",
+      "passed": true,
+      "detail": "/Users/mi_qi88sohu.com/Documents/ChatGPT/\u91cf\u5316\u7ebf\u2014\u2014\u8bad\u7ec3\uff0c\u9879\u76ee\u5f00\u53d1\u4e0e\u6295\u9012/reports/generated/checkpoints/20260905T1712Z-final/simulation-symmetric-touch.json"
+    },
+    {
+      "name": "simulation artifact: symmetric/queue_aware",
+      "passed": true,
+      "detail": "/Users/mi_qi88sohu.com/Documents/ChatGPT/\u91cf\u5316\u7ebf\u2014\u2014\u8bad\u7ec3\uff0c\u9879\u76ee\u5f00\u53d1\u4e0e\u6295\u9012/reports/generated/checkpoints/20260905T1712Z-final/simulation-symmetric-queue-aware.json"
+    },
+    {
+      "name": "simulation artifact: signal_inventory/touch",
+      "passed": true,
+      "detail": "/Users/mi_qi88sohu.com/Documents/ChatGPT/\u91cf\u5316\u7ebf\u2014\u2014\u8bad\u7ec3\uff0c\u9879\u76ee\u5f00\u53d1\u4e0e\u6295\u9012/reports/generated/checkpoints/20260905T1712Z-final/simulation-signal_inventory-touch.json"
+    },
+    {
+      "name": "simulation artifact: signal_inventory/queue_aware",
+      "passed": true,
+      "detail": "/Users/mi_qi88sohu.com/Documents/ChatGPT/\u91cf\u5316\u7ebf\u2014\u2014\u8bad\u7ec3\uff0c\u9879\u76ee\u5f00\u53d1\u4e0e\u6295\u9012/reports/generated/checkpoints/20260905T1712Z-final/simulation-signal_inventory-queue-aware.json"
+    },
+    {
+      "name": "sensitivity grid",
+      "passed": true,
+      "detail": "manifest cases: 50; CSV rows: 50"
+    },
+    {
+      "name": "profitability claim guardrail",
+      "passed": true,
+      "detail": "robust-positive cases: 0; status: not_supported"
+    }
+  ],
+  "warnings": [
+    "Checkpoint-level raw QA is not fresh. This is acceptable only because collection was intentionally stopped; structural stream checks still pass."
+  ]
+}

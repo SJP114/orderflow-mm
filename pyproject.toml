@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "orderflow-mm"
+version = "0.1.0"
+description = "Order-flow research and inventory-aware market-making simulator"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  "pandas>=2.2,<4",
+  "pyarrow>=18,<24",
+  "scikit-learn>=1.5,<2",
+  "websockets>=15,<17",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+  "ruff>=0.12,<1",
+]
+report = [
+  "matplotlib>=3.9,<4",
+]
+
+[project.scripts]
+orderflow-mm = "orderflow_mm.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/orderflow_mm"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

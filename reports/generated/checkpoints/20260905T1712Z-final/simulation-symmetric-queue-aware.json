@@ -1,0 +1,1072 @@
+{
+  "config": {
+    "strategy": "symmetric",
+    "fill_model": "queue_aware",
+    "order_size": 0.001,
+    "inventory_limit": 0.01,
+    "signal_skew_bps": 0.5,
+    "inventory_penalty_bps": 0.5,
+    "maker_fee_bps": 1.0,
+    "queue_fraction": 1.0,
+    "tick_size": 0.01
+  },
+  "assumptions": {
+    "quote_lifetime_seconds": 1,
+    "decision_time": "end of second t",
+    "fill_window": "trade flow observed during second t+1",
+    "touch": "fill when an opposing aggressive trade reaches the quoted price",
+    "queue_aware": "touch condition plus opposing volume must exceed queue_fraction times displayed top-of-book size; volume is not price-level reconstructed",
+    "final_inventory": "marked at final mid and separately charged a liquidation estimate"
+  },
+  "rows": 87570,
+  "contiguous_segments": 381,
+  "skipped_gap_transitions": 380,
+  "gap_liquidation_cost": 8.449360268614459,
+  "start": "2026-08-28T04:14:17+00:00",
+  "end": "2026-09-05T16:54:22+00:00",
+  "fills": 9782,
+  "buy_fills": 4801,
+  "sell_fills": 4981,
+  "total_fees": 76.80222268003027,
+  "spread_capture": 0.1659487500051185,
+  "adverse_selection": -72.7505279999967,
+  "markout_1s": -72.58457924999159,
+  "final_inventory": 0.001,
+  "max_absolute_inventory": 0.010000000000000002,
+  "final_marked_pnl": -210.78767529864427,
+  "estimated_liquidation_cost": 0.008006132499997381,
+  "liquidation_adjusted_pnl": -210.79568143114426,
+  "maximum_drawdown": -210.78767529864427,
+  "hourly_fill_attribution": [
+    {
+      "hour_utc": "2026-08-28T04:00:00+00:00",
+      "fills": 1,
+      "buy_fills": 0,
+      "sell_fills": 1,
+      "total_fees": 0.007984081,
+      "spread_capture": 5.000000004656613e-06,
+      "adverse_selection": -0.0022000000000116414,
+      "markout_1s": -0.0021950000000069848
+    },
+    {
+      "hour_utc": "2026-08-28T06:00:00+00:00",
+      "fills": 85,
+      "buy_fills": 47,
+      "sell_fills": 38,
+      "total_fees": 0.67649778336,
+      "spread_capture": 0.00042330000008863867,
+      "adverse_selection": -0.27664659999995234,
+      "markout_1s": -0.27622329999986367
+    },
+    {
+      "hour_utc": "2026-08-28T07:00:00+00:00",
+      "fills": 292,
+      "buy_fills": 161,
+      "sell_fills": 131,
+      "total_fees": 2.30355816501,
+      "spread_capture": 0.001445199999772449,
+      "adverse_selection": -1.160147499999834,
+      "markout_1s": -1.1587023000000616
+    },
+    {
+      "hour_utc": "2026-08-28T08:00:00+00:00",
+      "fills": 295,
+      "buy_fills": 141,
+      "sell_fills": 154,
+      "total_fees": 2.3260867027799996,
+      "spread_capture": 0.0014590500000641621,
+      "adverse_selection": -1.320900099999884,
+      "markout_1s": -1.3194410499998197
+    },
+    {
+      "hour_utc": "2026-08-28T09:00:00+00:00",
+      "fills": 303,
+      "buy_fills": 156,
+      "sell_fills": 147,
+      "total_fees": 2.36604364172,
+      "spread_capture": 0.0017354000001799433,
+      "adverse_selection": -1.6587823999998481,
+      "markout_1s": -1.6570469999996682
+    },
+    {
+      "hour_utc": "2026-08-28T10:00:00+00:00",
+      "fills": 301,
+      "buy_fills": 145,
+      "sell_fills": 156,
+      "total_fees": 2.3471975880600002,
+      "spread_capture": 0.0017614499999604597,
+      "adverse_selection": -1.3937593999999274,
+      "markout_1s": -1.3919979499999668
+    },
+    {
+      "hour_utc": "2026-08-28T11:00:00+00:00",
+      "fills": 2,
+      "buy_fills": 1,
+      "sell_fills": 1,
+      "total_fees": 0.01592958,
+      "spread_capture": 9.99999999476131e-06,
+      "adverse_selection": -0.00519999999999709,
+      "markout_1s": -0.005190000000002328
+    },
+    {
+      "hour_utc": "2026-08-28T13:00:00+00:00",
+      "fills": 370,
+      "buy_fills": 146,
+      "sell_fills": 224,
+      "total_fees": 2.90774070716,
+      "spread_capture": 0.011699550000305318,
+      "adverse_selection": -3.278732400000053,
+      "markout_1s": -3.267032849999748
+    },
+    {
+      "hour_utc": "2026-08-28T14:00:00+00:00",
+      "fills": 797,
+      "buy_fills": 410,
+      "sell_fills": 387,
+      "total_fees": 6.2477580790700005,
+      "spread_capture": 0.008805800000506715,
+      "adverse_selection": -7.116378899999937,
+      "markout_1s": -7.1075730999994295
+    },
+    {
+      "hour_utc": "2026-08-28T15:00:00+00:00",
+      "fills": 702,
+      "buy_fills": 355,
+      "sell_fills": 347,
+      "total_fees": 5.5387124341,
+      "spread_capture": 0.007396100000246078,
+      "adverse_selection": -5.6025467999996446,
+      "markout_1s": -5.595150699999398
+    },
+    {
+      "hour_utc": "2026-08-28T16:00:00+00:00",
+      "fills": 853,
+      "buy_fills": 423,
+      "sell_fills": 430,
+      "total_fees": 6.6200425119199995,
+      "spread_capture": 0.027058150000243333,
+      "adverse_selection": -8.597882399999696,
+      "markout_1s": -8.570824249999452
+    },
+    {
+      "hour_utc": "2026-08-28T17:00:00+00:00",
+      "fills": 24,
+      "buy_fills": 6,
+      "sell_fills": 18,
+      "total_fees": 0.180713241,
+      "spread_capture": 0.00011605000000621659,
+      "adverse_selection": -0.18239789999996792,
+      "markout_1s": -0.1822818499999617
+    },
+    {
+      "hour_utc": "2026-08-28T18:00:00+00:00",
+      "fills": 14,
+      "buy_fills": 14,
+      "sell_fills": 0,
+      "total_fees": 0.10854981400000001,
+      "spread_capture": 0.00040000000005238693,
+      "adverse_selection": -0.08961000000000058,
+      "markout_1s": -0.0892099999999482
+    },
+    {
+      "hour_utc": "2026-08-28T19:00:00+00:00",
+      "fills": 14,
+      "buy_fills": 4,
+      "sell_fills": 10,
+      "total_fees": 0.108574784,
+      "spread_capture": 6.999999999243301e-05,
+      "adverse_selection": -0.05015999999998894,
+      "markout_1s": -0.05008999999999651
+    },
+    {
+      "hour_utc": "2026-08-28T20:00:00+00:00",
+      "fills": 7,
+      "buy_fills": 4,
+      "sell_fills": 3,
+      "total_fees": 0.054201281999999996,
+      "spread_capture": 3.500000000349246e-05,
+      "adverse_selection": -0.03505000000000291,
+      "markout_1s": -0.03501499999999942
+    },
+    {
+      "hour_utc": "2026-08-28T21:00:00+00:00",
+      "fills": 6,
+      "buy_fills": 1,
+      "sell_fills": 5,
+      "total_fees": 0.046417334000000005,
+      "spread_capture": 2.9999999984283935e-05,
+      "adverse_selection": -0.027909999999974386,
+      "markout_1s": -0.027879999999990107
+    },
+    {
+      "hour_utc": "2026-08-28T22:00:00+00:00",
+      "fills": 10,
+      "buy_fills": 4,
+      "sell_fills": 6,
+      "total_fees": 0.077471981,
+      "spread_capture": 4.999999997380656e-05,
+      "adverse_selection": -0.027970000000001164,
+      "markout_1s": -0.027920000000027357
+    },
+    {
+      "hour_utc": "2026-08-29T14:00:00+00:00",
+      "fills": 214,
+      "buy_fills": 108,
+      "sell_fills": 106,
+      "total_fees": 1.6431059975,
+      "spread_capture": 0.003394450000082143,
+      "adverse_selection": -1.2377576999997923,
+      "markout_1s": -1.2343632499997101
+    },
+    {
+      "hour_utc": "2026-08-29T15:00:00+00:00",
+      "fills": 105,
+      "buy_fills": 50,
+      "sell_fills": 55,
+      "total_fees": 0.8035542453,
+      "spread_capture": 0.0005155999999119377,
+      "adverse_selection": -0.48474069999999136,
+      "markout_1s": -0.4842251000000794
+    },
+    {
+      "hour_utc": "2026-08-30T00:00:00+00:00",
+      "fills": 38,
+      "buy_fills": 14,
+      "sell_fills": 24,
+      "total_fees": 0.297312815,
+      "spread_capture": 0.00019000000001688023,
+      "adverse_selection": -0.23830999999998312,
+      "markout_1s": -0.23811999999996625
+    },
+    {
+      "hour_utc": "2026-08-30T02:00:00+00:00",
+      "fills": 3,
+      "buy_fills": 3,
+      "sell_fills": 0,
+      "total_fees": 0.0234338,
+      "spread_capture": 1.5000000013969839e-05,
+      "adverse_selection": -0.008440000000002328,
+      "markout_1s": -0.008424999999988358
+    },
+    {
+      "hour_utc": "2026-08-30T03:00:00+00:00",
+      "fills": 96,
+      "buy_fills": 34,
+      "sell_fills": 62,
+      "total_fees": 0.7290498237099999,
+      "spread_capture": 0.00047150000001580335,
+      "adverse_selection": -0.2501556999999694,
+      "markout_1s": -0.24968419999995356
+    },
+    {
+      "hour_utc": "2026-08-30T07:00:00+00:00",
+      "fills": 4,
+      "buy_fills": 2,
+      "sell_fills": 2,
+      "total_fees": 0.031256458,
+      "spread_capture": 2.000000000407454e-05,
+      "adverse_selection": -0.019580000000001745,
+      "markout_1s": -0.01955999999999767
+    },
+    {
+      "hour_utc": "2026-08-30T08:00:00+00:00",
+      "fills": 28,
+      "buy_fills": 8,
+      "sell_fills": 20,
+      "total_fees": 0.2121847463,
+      "spread_capture": 0.0013707500000396976,
+      "adverse_selection": -0.08631000000001222,
+      "markout_1s": -0.08493924999997253
+    },
+    {
+      "hour_utc": "2026-08-30T10:00:00+00:00",
+      "fills": 59,
+      "buy_fills": 24,
+      "sell_fills": 35,
+      "total_fees": 0.44623441448,
+      "spread_capture": 0.00042085000010411025,
+      "adverse_selection": -0.25443670000001456,
+      "markout_1s": -0.25401584999991045
+    },
+    {
+      "hour_utc": "2026-08-30T11:00:00+00:00",
+      "fills": 6,
+      "buy_fills": 0,
+      "sell_fills": 6,
+      "total_fees": 0.046887287,
+      "spread_capture": 2.999999996973202e-05,
+      "adverse_selection": -0.006709999999991851,
+      "markout_1s": -0.00668000000002212
+    },
+    {
+      "hour_utc": "2026-08-30T12:00:00+00:00",
+      "fills": 286,
+      "buy_fills": 138,
+      "sell_fills": 148,
+      "total_fees": 2.24207179306,
+      "spread_capture": 0.009115800000228628,
+      "adverse_selection": -2.0067196000000007,
+      "markout_1s": -1.9976037999997722
+    },
+    {
+      "hour_utc": "2026-08-30T13:00:00+00:00",
+      "fills": 264,
+      "buy_fills": 132,
+      "sell_fills": 132,
+      "total_fees": 2.06110930626,
+      "spread_capture": 0.004658000000155444,
+      "adverse_selection": -1.4541600000000034,
+      "markout_1s": -1.4495019999998482
+    },
+    {
+      "hour_utc": "2026-08-30T14:00:00+00:00",
+      "fills": 176,
+      "buy_fills": 91,
+      "sell_fills": 85,
+      "total_fees": 1.386232121999999,
+      "spread_capture": 0.0045489500003220735,
+      "adverse_selection": -1.2074078999999143,
+      "markout_1s": -1.2028589499995923
+    },
+    {
+      "hour_utc": "2026-08-30T15:00:00+00:00",
+      "fills": 7,
+      "buy_fills": 4,
+      "sell_fills": 3,
+      "total_fees": 0.055146577,
+      "spread_capture": 3.4999999974388634e-05,
+      "adverse_selection": -0.07925999999999477,
+      "markout_1s": -0.07922500000002036
+    },
+    {
+      "hour_utc": "2026-08-30T16:00:00+00:00",
+      "fills": 18,
+      "buy_fills": 11,
+      "sell_fills": 7,
+      "total_fees": 0.142451978,
+      "spread_capture": 9.00000000547152e-05,
+      "adverse_selection": -0.14543999999998777,
+      "markout_1s": -0.14534999999993306
+    },
+    {
+      "hour_utc": "2026-08-30T17:00:00+00:00",
+      "fills": 13,
+      "buy_fills": 10,
+      "sell_fills": 3,
+      "total_fees": 0.102773577,
+      "spread_capture": 6.49999999877764e-05,
+      "adverse_selection": -0.09631999999997788,
+      "markout_1s": -0.0962549999999901
+    },
+    {
+      "hour_utc": "2026-08-30T18:00:00+00:00",
+      "fills": 14,
+      "buy_fills": 13,
+      "sell_fills": 1,
+      "total_fees": 0.110442123,
+      "spread_capture": 6.999999999243301e-05,
+      "adverse_selection": -0.056859999999971475,
+      "markout_1s": -0.056789999999979045
+    },
+    {
+      "hour_utc": "2026-08-30T19:00:00+00:00",
+      "fills": 11,
+      "buy_fills": 0,
+      "sell_fills": 11,
+      "total_fees": 0.07271317542000001,
+      "spread_capture": 0.000391049999971292,
+      "adverse_selection": -0.02135709999998231,
+      "markout_1s": -0.02096605000001102
+    },
+    {
+      "hour_utc": "2026-08-30T20:00:00+00:00",
+      "fills": 4,
+      "buy_fills": 3,
+      "sell_fills": 1,
+      "total_fees": 0.031474887,
+      "spread_capture": 2.000000000407454e-05,
+      "adverse_selection": -0.019929999999993012,
+      "markout_1s": -0.01990999999998894
+    },
+    {
+      "hour_utc": "2026-08-30T21:00:00+00:00",
+      "fills": 12,
+      "buy_fills": 5,
+      "sell_fills": 7,
+      "total_fees": 0.094278031,
+      "spread_capture": 0.00025000000004365573,
+      "adverse_selection": -0.04875,
+      "markout_1s": -0.04849999999995635
+    },
+    {
+      "hour_utc": "2026-08-30T22:00:00+00:00",
+      "fills": 9,
+      "buy_fills": 7,
+      "sell_fills": 2,
+      "total_fees": 0.06959603514,
+      "spread_capture": 4.429999998304993e-05,
+      "adverse_selection": -0.05428999999999359,
+      "markout_1s": -0.05424570000001055
+    },
+    {
+      "hour_utc": "2026-08-30T23:00:00+00:00",
+      "fills": 92,
+      "buy_fills": 46,
+      "sell_fills": 46,
+      "total_fees": 0.714714717,
+      "spread_capture": 0.0013200000000069849,
+      "adverse_selection": -0.723449999999968,
+      "markout_1s": -0.7221299999999611
+    },
+    {
+      "hour_utc": "2026-08-31T00:00:00+00:00",
+      "fills": 408,
+      "buy_fills": 205,
+      "sell_fills": 203,
+      "total_fees": 3.1645004539999997,
+      "spread_capture": 0.002244050000139978,
+      "adverse_selection": -2.7742199999995893,
+      "markout_1s": -2.771975949999449
+    },
+    {
+      "hour_utc": "2026-08-31T12:00:00+00:00",
+      "fills": 44,
+      "buy_fills": 17,
+      "sell_fills": 27,
+      "total_fees": 0.342532647,
+      "spread_capture": 0.000220000000030268,
+      "adverse_selection": -0.3785999999999913,
+      "markout_1s": -0.378379999999961
+    },
+    {
+      "hour_utc": "2026-08-31T13:00:00+00:00",
+      "fills": 364,
+      "buy_fills": 188,
+      "sell_fills": 176,
+      "total_fees": 2.8404514770000002,
+      "spread_capture": 0.0021300000002229353,
+      "adverse_selection": -3.2243299999997546,
+      "markout_1s": -3.2221999999995314
+    },
+    {
+      "hour_utc": "2026-08-31T14:00:00+00:00",
+      "fills": 18,
+      "buy_fills": 7,
+      "sell_fills": 11,
+      "total_fees": 0.141571506,
+      "spread_capture": 9.000000001105946e-05,
+      "adverse_selection": -0.13727999999998428,
+      "markout_1s": -0.13718999999997322
+    },
+    {
+      "hour_utc": "2026-08-31T15:00:00+00:00",
+      "fills": 13,
+      "buy_fills": 4,
+      "sell_fills": 9,
+      "total_fees": 0.102063282,
+      "spread_capture": 6.49999999877764e-05,
+      "adverse_selection": -0.08998999999997614,
+      "markout_1s": -0.08992499999998836
+    },
+    {
+      "hour_utc": "2026-08-31T16:00:00+00:00",
+      "fills": 4,
+      "buy_fills": 3,
+      "sell_fills": 1,
+      "total_fees": 0.031481491,
+      "spread_capture": 2.000000000407454e-05,
+      "adverse_selection": -0.03666999999999825,
+      "markout_1s": -0.03664999999999418
+    },
+    {
+      "hour_utc": "2026-08-31T17:00:00+00:00",
+      "fills": 3,
+      "buy_fills": 0,
+      "sell_fills": 3,
+      "total_fees": 0.023591599999999997,
+      "spread_capture": 1.5000000013969839e-05,
+      "adverse_selection": -0.014,
+      "markout_1s": -0.01398499999998603
+    },
+    {
+      "hour_utc": "2026-08-31T18:00:00+00:00",
+      "fills": 3,
+      "buy_fills": 1,
+      "sell_fills": 2,
+      "total_fees": 0.023701757,
+      "spread_capture": 0.00010499999999592546,
+      "adverse_selection": -0.04132000000000698,
+      "markout_1s": -0.04121500000001106
+    },
+    {
+      "hour_utc": "2026-08-31T21:00:00+00:00",
+      "fills": 3,
+      "buy_fills": 0,
+      "sell_fills": 3,
+      "total_fees": 0.023686383,
+      "spread_capture": 1.4999999999417924e-05,
+      "adverse_selection": -0.0012600000000093133,
+      "markout_1s": -0.0012450000000098953
+    },
+    {
+      "hour_utc": "2026-08-31T22:00:00+00:00",
+      "fills": 4,
+      "buy_fills": 1,
+      "sell_fills": 3,
+      "total_fees": 0.031484798999999994,
+      "spread_capture": 2.000000000407454e-05,
+      "adverse_selection": -0.010519999999989524,
+      "markout_1s": -0.010499999999985448
+    },
+    {
+      "hour_utc": "2026-08-31T23:00:00+00:00",
+      "fills": 8,
+      "buy_fills": 0,
+      "sell_fills": 8,
+      "total_fees": 0.062793489,
+      "spread_capture": 3.999999997904524e-05,
+      "adverse_selection": -0.01025,
+      "markout_1s": -0.010210000000020956
+    },
+    {
+      "hour_utc": "2026-09-01T00:00:00+00:00",
+      "fills": 10,
+      "buy_fills": 5,
+      "sell_fills": 5,
+      "total_fees": 0.07872298,
+      "spread_capture": 5.0000000032014216e-05,
+      "adverse_selection": -0.05099000000001979,
+      "markout_1s": -0.05093999999998777
+    },
+    {
+      "hour_utc": "2026-09-01T23:00:00+00:00",
+      "fills": 8,
+      "buy_fills": 3,
+      "sell_fills": 5,
+      "total_fees": 0.061869223,
+      "spread_capture": 4.000000000814908e-05,
+      "adverse_selection": -0.03989000000001397,
+      "markout_1s": -0.039850000000005825
+    },
+    {
+      "hour_utc": "2026-09-02T00:00:00+00:00",
+      "fills": 6,
+      "buy_fills": 4,
+      "sell_fills": 2,
+      "total_fees": 0.046397026,
+      "spread_capture": 2.999999999883585e-05,
+      "adverse_selection": -0.029000000000014552,
+      "markout_1s": -0.02897000000001572
+    },
+    {
+      "hour_utc": "2026-09-02T01:00:00+00:00",
+      "fills": 10,
+      "buy_fills": 3,
+      "sell_fills": 7,
+      "total_fees": 0.077084043,
+      "spread_capture": 5.000000000291039e-05,
+      "adverse_selection": -0.07300000000000001,
+      "markout_1s": -0.07294999999999709
+    },
+    {
+      "hour_utc": "2026-09-02T02:00:00+00:00",
+      "fills": 3,
+      "buy_fills": 0,
+      "sell_fills": 3,
+      "total_fees": 0.023168735000000003,
+      "spread_capture": 1.5000000013969839e-05,
+      "adverse_selection": -0.02475,
+      "markout_1s": -0.024734999999986032
+    },
+    {
+      "hour_utc": "2026-09-02T03:00:00+00:00",
+      "fills": 12,
+      "buy_fills": 0,
+      "sell_fills": 12,
+      "total_fees": 0.093005787,
+      "spread_capture": 6.0000000026775526e-05,
+      "adverse_selection": -0.05507000000003609,
+      "markout_1s": -0.055010000000009315
+    },
+    {
+      "hour_utc": "2026-09-02T04:00:00+00:00",
+      "fills": 12,
+      "buy_fills": 5,
+      "sell_fills": 7,
+      "total_fees": 0.0862879909999998,
+      "spread_capture": 5.5699999993666876e-05,
+      "adverse_selection": -0.042871399999996646,
+      "markout_1s": -0.04281570000000298
+    },
+    {
+      "hour_utc": "2026-09-02T05:00:00+00:00",
+      "fills": 5,
+      "buy_fills": 2,
+      "sell_fills": 3,
+      "total_fees": 0.038801266,
+      "spread_capture": 2.5000000023283067e-05,
+      "adverse_selection": -0.01794999999999709,
+      "markout_1s": -0.01792499999997381
+    },
+    {
+      "hour_utc": "2026-09-02T06:00:00+00:00",
+      "fills": 3,
+      "buy_fills": 1,
+      "sell_fills": 2,
+      "total_fees": 0.023287744,
+      "spread_capture": 1.5000000013969839e-05,
+      "adverse_selection": -0.031580000000016296,
+      "markout_1s": -0.03156500000000233
+    },
+    {
+      "hour_utc": "2026-09-02T07:00:00+00:00",
+      "fills": 6,
+      "buy_fills": 6,
+      "sell_fills": 0,
+      "total_fees": 0.04656602,
+      "spread_capture": 2.999999999883585e-05,
+      "adverse_selection": -0.05834999999997672,
+      "markout_1s": -0.05831999999997788
+    },
+    {
+      "hour_utc": "2026-09-02T08:00:00+00:00",
+      "fills": 6,
+      "buy_fills": 3,
+      "sell_fills": 3,
+      "total_fees": 0.046219577000000005,
+      "spread_capture": 2.999999999883585e-05,
+      "adverse_selection": -0.05674000000000524,
+      "markout_1s": -0.05671000000000641
+    },
+    {
+      "hour_utc": "2026-09-02T09:00:00+00:00",
+      "fills": 21,
+      "buy_fills": 14,
+      "sell_fills": 7,
+      "total_fees": 0.161297316,
+      "spread_capture": 0.00010499999999592546,
+      "adverse_selection": -0.16300999999999477,
+      "markout_1s": -0.16290499999999886
+    },
+    {
+      "hour_utc": "2026-09-02T10:00:00+00:00",
+      "fills": 13,
+      "buy_fills": 6,
+      "sell_fills": 7,
+      "total_fees": 0.099342553,
+      "spread_capture": 6.50000000023283e-05,
+      "adverse_selection": -0.050540000000022706,
+      "markout_1s": -0.05047500000002037
+    },
+    {
+      "hour_utc": "2026-09-02T11:00:00+00:00",
+      "fills": 6,
+      "buy_fills": 2,
+      "sell_fills": 4,
+      "total_fees": 0.045927783,
+      "spread_capture": 3.0000000013387763e-05,
+      "adverse_selection": -0.0443300000000163,
+      "markout_1s": -0.04430000000000291
+    },
+    {
+      "hour_utc": "2026-09-02T12:00:00+00:00",
+      "fills": 7,
+      "buy_fills": 2,
+      "sell_fills": 5,
+      "total_fees": 0.053807653,
+      "spread_capture": 3.4999999974388634e-05,
+      "adverse_selection": -0.06746999999997207,
+      "markout_1s": -0.06743499999999768
+    },
+    {
+      "hour_utc": "2026-09-02T13:00:00+00:00",
+      "fills": 28,
+      "buy_fills": 16,
+      "sell_fills": 12,
+      "total_fees": 0.21535071,
+      "spread_capture": 0.0001400000000430737,
+      "adverse_selection": -0.23772000000000118,
+      "markout_1s": -0.2375799999999581
+    },
+    {
+      "hour_utc": "2026-09-02T14:00:00+00:00",
+      "fills": 14,
+      "buy_fills": 5,
+      "sell_fills": 9,
+      "total_fees": 0.108111304,
+      "spread_capture": 7.000000002153684e-05,
+      "adverse_selection": -0.10293000000000757,
+      "markout_1s": -0.10285999999998603
+    },
+    {
+      "hour_utc": "2026-09-02T15:00:00+00:00",
+      "fills": 9,
+      "buy_fills": 5,
+      "sell_fills": 4,
+      "total_fees": 0.06939502399999996,
+      "spread_capture": 4.5000000027357575e-05,
+      "adverse_selection": -0.0537600000000093,
+      "markout_1s": -0.053714999999981944
+    },
+    {
+      "hour_utc": "2026-09-02T16:00:00+00:00",
+      "fills": 4,
+      "buy_fills": 3,
+      "sell_fills": 1,
+      "total_fees": 0.030949464,
+      "spread_capture": 2.0000000018626453e-05,
+      "adverse_selection": -0.02048999999999069,
+      "markout_1s": -0.02046999999997206
+    },
+    {
+      "hour_utc": "2026-09-02T17:00:00+00:00",
+      "fills": 6,
+      "buy_fills": 4,
+      "sell_fills": 2,
+      "total_fees": 0.046304545,
+      "spread_capture": 3.0000000027939677e-05,
+      "adverse_selection": -0.03507000000002154,
+      "markout_1s": -0.035039999999993604
+    },
+    {
+      "hour_utc": "2026-09-02T18:00:00+00:00",
+      "fills": 5,
+      "buy_fills": 4,
+      "sell_fills": 1,
+      "total_fees": 0.038714509,
+      "spread_capture": 2.4999999994179235e-05,
+      "adverse_selection": -0.03988999999998487,
+      "markout_1s": -0.039864999999990686
+    },
+    {
+      "hour_utc": "2026-09-02T19:00:00+00:00",
+      "fills": 4,
+      "buy_fills": 3,
+      "sell_fills": 1,
+      "total_fees": 0.030910261,
+      "spread_capture": 2.0000000018626453e-05,
+      "adverse_selection": -0.036690000000031434,
+      "markout_1s": -0.0366700000000128
+    },
+    {
+      "hour_utc": "2026-09-02T20:00:00+00:00",
+      "fills": 6,
+      "buy_fills": 3,
+      "sell_fills": 3,
+      "total_fees": 0.046407581,
+      "spread_capture": 2.9999999984283935e-05,
+      "adverse_selection": -0.04331000000001222,
+      "markout_1s": -0.04328000000002794
+    },
+    {
+      "hour_utc": "2026-09-02T21:00:00+00:00",
+      "fills": 13,
+      "buy_fills": 1,
+      "sell_fills": 12,
+      "total_fees": 0.10049232400000001,
+      "spread_capture": 7.000000003608876e-05,
+      "adverse_selection": -0.05063499999998021,
+      "markout_1s": -0.05056499999994412
+    },
+    {
+      "hour_utc": "2026-09-02T22:00:00+00:00",
+      "fills": 4,
+      "buy_fills": 2,
+      "sell_fills": 2,
+      "total_fees": 0.030835521,
+      "spread_capture": 2.0000000018626453e-05,
+      "adverse_selection": -0.012900000000008731,
+      "markout_1s": -0.012879999999990106
+    },
+    {
+      "hour_utc": "2026-09-02T23:00:00+00:00",
+      "fills": 9,
+      "buy_fills": 1,
+      "sell_fills": 8,
+      "total_fees": 0.069455591,
+      "spread_capture": 4.499999999825377e-05,
+      "adverse_selection": -0.04890999999998894,
+      "markout_1s": -0.048864999999990694
+    },
+    {
+      "hour_utc": "2026-09-03T00:00:00+00:00",
+      "fills": 5,
+      "buy_fills": 3,
+      "sell_fills": 2,
+      "total_fees": 0.038588129,
+      "spread_capture": 2.5000000008731152e-05,
+      "adverse_selection": -0.06230999999999767,
+      "markout_1s": -0.062284999999988946
+    },
+    {
+      "hour_utc": "2026-09-03T15:00:00+00:00",
+      "fills": 370,
+      "buy_fills": 186,
+      "sell_fills": 184,
+      "total_fees": 2.99610095141,
+      "spread_capture": 0.012514750000290224,
+      "adverse_selection": -2.7140721000000956,
+      "markout_1s": -2.7015573499998053
+    },
+    {
+      "hour_utc": "2026-09-03T16:00:00+00:00",
+      "fills": 18,
+      "buy_fills": 11,
+      "sell_fills": 7,
+      "total_fees": 0.145960717,
+      "spread_capture": 9.00000000547152e-05,
+      "adverse_selection": -0.12361000000002968,
+      "markout_1s": -0.12351999999997497
+    },
+    {
+      "hour_utc": "2026-09-03T17:00:00+00:00",
+      "fills": 15,
+      "buy_fills": 4,
+      "sell_fills": 11,
+      "total_fees": 0.121573063,
+      "spread_capture": 7.499999998253771e-05,
+      "adverse_selection": -0.0463300000000163,
+      "markout_1s": -0.04625500000003376
+    },
+    {
+      "hour_utc": "2026-09-03T18:00:00+00:00",
+      "fills": 16,
+      "buy_fills": 5,
+      "sell_fills": 11,
+      "total_fees": 0.129802954,
+      "spread_capture": 7.999999992898666e-05,
+      "adverse_selection": -0.1085499999999738,
+      "markout_1s": -0.10847000000004482
+    },
+    {
+      "hour_utc": "2026-09-03T19:00:00+00:00",
+      "fills": 23,
+      "buy_fills": 4,
+      "sell_fills": 19,
+      "total_fees": 0.187463969,
+      "spread_capture": 0.00011499999997613487,
+      "adverse_selection": -0.12072000000000117,
+      "markout_1s": -0.12060500000002504
+    },
+    {
+      "hour_utc": "2026-09-03T20:00:00+00:00",
+      "fills": 16,
+      "buy_fills": 9,
+      "sell_fills": 7,
+      "total_fees": 0.130429903,
+      "spread_capture": 8.000000001629815e-05,
+      "adverse_selection": -0.09577000000001862,
+      "markout_1s": -0.09569000000000233
+    },
+    {
+      "hour_utc": "2026-09-03T21:00:00+00:00",
+      "fills": 23,
+      "buy_fills": 13,
+      "sell_fills": 10,
+      "total_fees": 0.18306371144,
+      "spread_capture": 0.00011220000008994249,
+      "adverse_selection": -0.1688315000000046,
+      "markout_1s": -0.16871929999991467
+    },
+    {
+      "hour_utc": "2026-09-03T22:00:00+00:00",
+      "fills": 8,
+      "buy_fills": 3,
+      "sell_fills": 5,
+      "total_fees": 0.065048787,
+      "spread_capture": 4.000000002270099e-05,
+      "adverse_selection": -0.06700999999999477,
+      "markout_1s": -0.06696999999997207
+    },
+    {
+      "hour_utc": "2026-09-03T23:00:00+00:00",
+      "fills": 17,
+      "buy_fills": 10,
+      "sell_fills": 7,
+      "total_fees": 0.13311808624000002,
+      "spread_capture": 8.194999995990657e-05,
+      "adverse_selection": -0.09218009999995266,
+      "markout_1s": -0.09209814999999275
+    },
+    {
+      "hour_utc": "2026-09-04T00:00:00+00:00",
+      "fills": 32,
+      "buy_fills": 16,
+      "sell_fills": 16,
+      "total_fees": 0.24998329528,
+      "spread_capture": 0.00015380000001227018,
+      "adverse_selection": -0.17390559999998484,
+      "markout_1s": -0.1737517999999726
+    },
+    {
+      "hour_utc": "2026-09-04T02:00:00+00:00",
+      "fills": 53,
+      "buy_fills": 38,
+      "sell_fills": 15,
+      "total_fees": 0.42816008,
+      "spread_capture": 0.0002650000000139699,
+      "adverse_selection": -0.40866000000001806,
+      "markout_1s": -0.40839500000000406
+    },
+    {
+      "hour_utc": "2026-09-04T04:00:00+00:00",
+      "fills": 37,
+      "buy_fills": 18,
+      "sell_fills": 19,
+      "total_fees": 0.29385184048,
+      "spread_capture": 0.00018120000008144417,
+      "adverse_selection": -0.12997519999998272,
+      "markout_1s": -0.1297939999999013
+    },
+    {
+      "hour_utc": "2026-09-04T05:00:00+00:00",
+      "fills": 186,
+      "buy_fills": 85,
+      "sell_fills": 101,
+      "total_fees": 1.4741571083000005,
+      "spread_capture": 0.002275200000277255,
+      "adverse_selection": -1.1421546999999113,
+      "markout_1s": -1.139879499999634
+    },
+    {
+      "hour_utc": "2026-09-04T06:00:00+00:00",
+      "fills": 48,
+      "buy_fills": 23,
+      "sell_fills": 25,
+      "total_fees": 0.37660119084,
+      "spread_capture": 0.0008225000000311411,
+      "adverse_selection": -0.3080648999999951,
+      "markout_1s": -0.30724239999996394
+    },
+    {
+      "hour_utc": "2026-09-04T12:00:00+00:00",
+      "fills": 617,
+      "buy_fills": 309,
+      "sell_fills": 308,
+      "total_fees": 4.912109599,
+      "spread_capture": 0.030655000000260772,
+      "adverse_selection": -6.163324999999691,
+      "markout_1s": -6.132669999999431
+    },
+    {
+      "hour_utc": "2026-09-04T13:00:00+00:00",
+      "fills": 364,
+      "buy_fills": 181,
+      "sell_fills": 183,
+      "total_fees": 2.88467370008,
+      "spread_capture": 0.011810400000258814,
+      "adverse_selection": -3.4522649999998976,
+      "markout_1s": -3.4404545999996388
+    },
+    {
+      "hour_utc": "2026-09-04T14:00:00+00:00",
+      "fills": 624,
+      "buy_fills": 311,
+      "sell_fills": 313,
+      "total_fees": 4.91195358897,
+      "spread_capture": 0.00492970000061905,
+      "adverse_selection": -5.368591199999679,
+      "markout_1s": -5.36366149999906
+    },
+    {
+      "hour_utc": "2026-09-04T15:00:00+00:00",
+      "fills": 315,
+      "buy_fills": 158,
+      "sell_fills": 157,
+      "total_fees": 2.4910114180000003,
+      "spread_capture": 0.0016908500002505026,
+      "adverse_selection": -2.3427200000001176,
+      "markout_1s": -2.341029149999867
+    },
+    {
+      "hour_utc": "2026-09-04T16:00:00+00:00",
+      "fills": 111,
+      "buy_fills": 53,
+      "sell_fills": 58,
+      "total_fees": 0.87445443564,
+      "spread_capture": 0.0006101499999425141,
+      "adverse_selection": -0.808006499999808,
+      "markout_1s": -0.8073963499998655
+    },
+    {
+      "hour_utc": "2026-09-04T17:00:00+00:00",
+      "fills": 3,
+      "buy_fills": 3,
+      "sell_fills": 0,
+      "total_fees": 0.023859152,
+      "spread_capture": 1.5000000013969839e-05,
+      "adverse_selection": -0.021169999999998253,
+      "markout_1s": -0.021154999999984287
+    },
+    {
+      "hour_utc": "2026-09-04T18:00:00+00:00",
+      "fills": 1,
+      "buy_fills": 1,
+      "sell_fills": 0,
+      "total_fees": 0.007956232,
+      "spread_capture": 5.000000004656613e-06,
+      "adverse_selection": -0.00032000000000698494,
+      "markout_1s": -0.00031500000000232834
+    },
+    {
+      "hour_utc": "2026-09-05T11:00:00+00:00",
+      "fills": 7,
+      "buy_fills": 5,
+      "sell_fills": 2,
+      "total_fees": 0.055745261,
+      "spread_capture": 3.4999999988940545e-05,
+      "adverse_selection": -0.060960000000006405,
+      "markout_1s": -0.06092500000001747
+    },
+    {
+      "hour_utc": "2026-09-05T12:00:00+00:00",
+      "fills": 88,
+      "buy_fills": 41,
+      "sell_fills": 47,
+      "total_fees": 0.701231495,
+      "spread_capture": 0.00044000000000232834,
+      "adverse_selection": -0.4740599999999395,
+      "markout_1s": -0.47361999999993715
+    },
+    {
+      "hour_utc": "2026-09-05T13:00:00+00:00",
+      "fills": 110,
+      "buy_fills": 50,
+      "sell_fills": 60,
+      "total_fees": 0.8763833830000001,
+      "spread_capture": 0.0019600000000355067,
+      "adverse_selection": -0.6234499999999389,
+      "markout_1s": -0.6214899999999034
+    },
+    {
+      "hour_utc": "2026-09-05T14:00:00+00:00",
+      "fills": 26,
+      "buy_fills": 6,
+      "sell_fills": 20,
+      "total_fees": 0.207133001,
+      "spread_capture": 0.0011750000000320142,
+      "adverse_selection": -0.11534999999996216,
+      "markout_1s": -0.11417499999993015
+    },
+    {
+      "hour_utc": "2026-09-05T15:00:00+00:00",
+      "fills": 5,
+      "buy_fills": 4,
+      "sell_fills": 1,
+      "total_fees": 0.039851194000000006,
+      "spread_capture": 2.5000000008731152e-05,
+      "adverse_selection": -0.010269999999989524,
+      "markout_1s": -0.010244999999980792
+    },
+    {
+      "hour_utc": "2026-09-05T16:00:00+00:00",
+      "fills": 7,
+      "buy_fills": 1,
+      "sell_fills": 6,
+      "total_fees": 0.055881399,
+      "spread_capture": 3.5000000018044374e-05,
+      "adverse_selection": -0.014950000000011641,
+      "markout_1s": -0.014914999999993597
+    }
+  ]
+}

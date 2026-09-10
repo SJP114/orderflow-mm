@@ -1,0 +1,24 @@
+{
+  "checkpoint_id": "20260905T1712Z-final",
+  "source_sha256": "ba169da7b80181d59652169b9ea3645db01cd96dac77001dea33e78cdc8e83a3",
+  "sources": [
+    "reports/generated/checkpoints/20260905T1712Z-final/checkpoint.json",
+    "reports/generated/checkpoints/20260905T1712Z-final/hourly-data-quality.csv",
+    "reports/generated/checkpoints/20260905T1712Z-final/logistic-walk-forward-1s.json",
+    "reports/generated/checkpoints/20260905T1712Z-final/logistic-walk-forward-5s.json",
+    "reports/generated/checkpoints/20260905T1712Z-final/sensitivity.csv"
+  ],
+  "outputs": [
+    "docs/assets/final/coverage_quality.png",
+    "docs/assets/final/coverage_quality.svg",
+    "docs/assets/final/walk_forward_stability.png",
+    "docs/assets/final/walk_forward_stability.svg",
+    "docs/assets/final/scenario_sensitivity.png",
+    "docs/assets/final/scenario_sensitivity.svg"
+  ],
+  "notes": [
+    "Missing UTC hours are plotted as zero raw-stream coverage, never interpolated.",
+    "The walk-forward chart shows every scored fold, not only aggregate metrics.",
+    "The sensitivity chart retains all 50 cases and an explicit zero-P&L reference."
+  ]
+}

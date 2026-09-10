@@ -1,0 +1,114 @@
+{
+  "research_question": "Do causal order-flow and top-of-book features predict the 5-second future mid-price direction out of sample?",
+  "horizon_seconds": 5,
+  "features": [
+    "spread_bps",
+    "book_imbalance",
+    "microprice_deviation_bps",
+    "trade_imbalance_1s",
+    "trade_imbalance_5s",
+    "trade_intensity_5s",
+    "log_mid_return_1s",
+    "realized_volatility_10s"
+  ],
+  "target": "future_direction_5s",
+  "source_rows": 282197,
+  "source_invalid_or_stale_book_rows": 194627,
+  "source_contiguous_segments": 381,
+  "segment_selection": "longest contiguous one-second segment",
+  "rows": 3586,
+  "split": {
+    "embargo_rows": 5,
+    "train": {
+      "rows": 2146,
+      "start": "2026-08-28T09:00:09+00:00",
+      "end": "2026-08-28T09:35:54+00:00"
+    },
+    "validation": {
+      "rows": 712,
+      "start": "2026-08-28T09:36:00+00:00",
+      "end": "2026-08-28T09:47:51+00:00"
+    },
+    "test": {
+      "rows": 718,
+      "start": "2026-08-28T09:47:57+00:00",
+      "end": "2026-08-28T09:59:54+00:00"
+    }
+  },
+  "selection": {
+    "candidate_c": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "selected_c": 10.0,
+    "validation_macro_f1": 0.46007027951472396
+  },
+  "majority_baseline": {
+    "accuracy": 0.6852367688022284,
+    "balanced_accuracy": 0.3333333333333333,
+    "macro_f1": 0.27107438016528923,
+    "majority_class": 0
+  },
+  "logistic_regression": {
+    "accuracy": 0.5724233983286908,
+    "balanced_accuracy": 0.45583092927703467,
+    "macro_f1": 0.38360916146049845,
+    "log_loss": 0.9569067545971208,
+    "confusion_matrix_labels": [
+      -1,
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        13,
+        135,
+        16
+      ],
+      [
+        13,
+        364,
+        115
+      ],
+      [
+        0,
+        28,
+        34
+      ]
+    ]
+  },
+  "standardized_coefficients": {
+    "-1": {
+      "spread_bps": -0.2364855974849137,
+      "book_imbalance": -0.26049706924247107,
+      "microprice_deviation_bps": -0.25944668730595366,
+      "trade_imbalance_1s": -0.055196082358871384,
+      "trade_imbalance_5s": -0.07694826569339122,
+      "trade_intensity_5s": 0.26350411655284844,
+      "log_mid_return_1s": 0.04168741393864605,
+      "realized_volatility_10s": 0.2195226319436216
+    },
+    "0": {
+      "spread_bps": 0.08206599421538317,
+      "book_imbalance": -0.13159946876795833,
+      "microprice_deviation_bps": -0.131245370328284,
+      "trade_imbalance_1s": 0.010675802341659896,
+      "trade_imbalance_5s": 0.12527893167421852,
+      "trade_intensity_5s": -0.10843550977381175,
+      "log_mid_return_1s": -0.09708769730694718,
+      "realized_volatility_10s": -0.5579314396017314
+    },
+    "1": {
+      "spread_bps": 0.15441960326953091,
+      "book_imbalance": 0.3920965380104295,
+      "microprice_deviation_bps": 0.39069205763423753,
+      "trade_imbalance_1s": 0.04452028001721141,
+      "trade_imbalance_5s": -0.048330665980827914,
+      "trade_intensity_5s": -0.15506860677903703,
+      "log_mid_return_1s": 0.0554002833683003,
+      "realized_volatility_10s": 0.3384088076581103
+    }
+  }
+}

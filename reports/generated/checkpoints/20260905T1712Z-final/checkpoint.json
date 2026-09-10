@@ -1,0 +1,172 @@
+{
+  "checkpoint_id": "20260905T1712Z-final",
+  "as_of_utc": "2026-09-05T17:40:09.478132+00:00",
+  "scope": {
+    "instrument": "BTCUSDT spot",
+    "bar_grain": "one second",
+    "closed_utc_hours_only": true,
+    "live_orders": false
+  },
+  "data": {
+    "raw_quality": {
+      "passed": false,
+      "freshness_threshold_seconds": 600.0,
+      "snapshot_started_at_ns": 1788630009478226000,
+      "streams": {
+        "book_ticker": {
+          "stream": "book_ticker",
+          "files": 569,
+          "rows": 13582663,
+          "min_receive_ts_ns": 1787890448362601000,
+          "max_receive_ts_ns": 1788628258479009000,
+          "duplicate_event_ids": 0,
+          "nonpositive_prices": 0,
+          "nonpositive_quantities": 0,
+          "max_receive_gap_ms": 80618045.035,
+          "gaps_over_5s": 432,
+          "crossed_quotes": 0,
+          "locked_quotes": 0,
+          "passed": true,
+          "freshness_lag_seconds": 1750.999217,
+          "fresh": false
+        },
+        "trade": {
+          "stream": "trade",
+          "files": 464,
+          "rows": 4891134,
+          "min_receive_ts_ns": 1787890448951082000,
+          "max_receive_ts_ns": 1788628258071737000,
+          "duplicate_event_ids": 0,
+          "nonpositive_prices": 0,
+          "nonpositive_quantities": 0,
+          "max_receive_gap_ms": 80619882.788,
+          "gaps_over_5s": 435,
+          "crossed_quotes": 0,
+          "locked_quotes": 0,
+          "passed": true,
+          "freshness_lag_seconds": 1751.406489,
+          "fresh": false
+        }
+      }
+    },
+    "full_hours_with_both_streams": 14,
+    "bar_summary": {
+      "rows": 282197,
+      "start": "2026-08-28T04:14:08+00:00",
+      "end": "2026-09-05T16:54:22+00:00",
+      "duplicate_seconds": 0,
+      "contiguous_segments": 95,
+      "longest_contiguous_segment_rows": 15813,
+      "invalid_or_stale_book_rows": 194627,
+      "invalid_or_stale_book_rate": 0.6896848655371957,
+      "valid_contiguous_segments": 381,
+      "longest_valid_contiguous_segment_rows": 3591,
+      "missing_seconds_between_partitions": 454618,
+      "missing_model_features": {
+        "spread_bps": 0,
+        "book_imbalance": 0,
+        "microprice_deviation_bps": 0,
+        "trade_imbalance_1s": 0,
+        "trade_imbalance_5s": 0,
+        "trade_intensity_5s": 0,
+        "log_mid_return_1s": 0,
+        "realized_volatility_10s": 0
+      },
+      "label_distribution": {
+        "future_direction_1s": {
+          "-1": 9732,
+          "0": 67249,
+          "1": 10208,
+          "<NA>": 195008
+        },
+        "future_direction_5s": {
+          "-1": 21746,
+          "0": 40892,
+          "1": 23037,
+          "<NA>": 196522
+        }
+      },
+      "training_ready": true
+    },
+    "closed_hour_files_refreshed": [],
+    "valid_seconds": 87570,
+    "valid_hours": 24.325
+  },
+  "acceptance": {
+    "required_valid_hours": 24.0,
+    "data_gate_met": true,
+    "status": "ready_for_final_validation",
+    "profitability_claim_status": "not_supported",
+    "automatic_profitability_claims_are_disabled": true
+  },
+  "scenario_summaries": [
+    {
+      "strategy": "symmetric",
+      "fill_model": "touch",
+      "maker_fee_bps": 1.0,
+      "fills": 127948,
+      "markout_1s": -74.56084500008369,
+      "liquidation_adjusted_pnl": -1159.794221227099,
+      "report": "reports/generated/checkpoints/20260905T1712Z-final/simulation-symmetric-touch.json"
+    },
+    {
+      "strategy": "symmetric",
+      "fill_model": "queue_aware",
+      "maker_fee_bps": 1.0,
+      "fills": 9782,
+      "markout_1s": -72.58457924999159,
+      "liquidation_adjusted_pnl": -210.79568143114426,
+      "report": "reports/generated/checkpoints/20260905T1712Z-final/simulation-symmetric-queue-aware.json"
+    },
+    {
+      "strategy": "signal_inventory",
+      "fill_model": "touch",
+      "maker_fee_bps": 1.0,
+      "fills": 74476,
+      "markout_1s": -71.72998000029526,
+      "liquidation_adjusted_pnl": -627.494820869288,
+      "report": "reports/generated/checkpoints/20260905T1712Z-final/simulation-signal_inventory-touch.json"
+    },
+    {
+      "strategy": "signal_inventory",
+      "fill_model": "queue_aware",
+      "maker_fee_bps": 1.0,
+      "fills": 23964,
+      "markout_1s": -61.816656300128784,
+      "liquidation_adjusted_pnl": -256.73384380583116,
+      "report": "reports/generated/checkpoints/20260905T1712Z-final/simulation-signal_inventory-queue-aware.json"
+    }
+  ],
+  "sensitivity_summary": {
+    "cases": 50,
+    "positive_cases": 0,
+    "positive_nonzero_fee_cases": 0,
+    "positive_queue_aware_cases": 0,
+    "positive_nonzero_fee_queue_aware_cases": 0,
+    "best_case": {
+      "strategy": "signal_inventory",
+      "fill_model": "touch",
+      "maker_fee_bps": 0.0,
+      "queue_fraction": 1.0,
+      "markout_1s": -71.72998000029526,
+      "liquidation_adjusted_pnl": -29.75789000033151
+    }
+  },
+  "artifacts": {
+    "hourly_data_quality": "reports/generated/checkpoints/20260905T1712Z-final/hourly-data-quality.csv",
+    "models": {
+      "baseline_1s": "reports/generated/checkpoints/20260905T1712Z-final/logistic-baseline-1s.json",
+      "walk_forward_1s": "reports/generated/checkpoints/20260905T1712Z-final/logistic-walk-forward-1s.json",
+      "baseline_5s": "reports/generated/checkpoints/20260905T1712Z-final/logistic-baseline-5s.json",
+      "walk_forward_5s": "reports/generated/checkpoints/20260905T1712Z-final/logistic-walk-forward-5s.json"
+    },
+    "simulations": [
+      "reports/generated/checkpoints/20260905T1712Z-final/simulation-symmetric-touch.json",
+      "reports/generated/checkpoints/20260905T1712Z-final/simulation-symmetric-queue-aware.json",
+      "reports/generated/checkpoints/20260905T1712Z-final/simulation-signal_inventory-touch.json",
+      "reports/generated/checkpoints/20260905T1712Z-final/simulation-signal_inventory-queue-aware.json"
+    ],
+    "sensitivity": "reports/generated/checkpoints/20260905T1712Z-final/sensitivity.csv"
+  },
+  "warnings": []
+}

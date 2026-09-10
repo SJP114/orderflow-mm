@@ -1,0 +1,17 @@
+.DS_Store
+.venv/
+.pytest_cache/
+.ruff_cache/
+.uv-cache/
+.tools/
+__pycache__/
+*.py[cod]
+tmp/
+
+# Generated market data and reports
+data/
+reports/generated/*
+!reports/generated/checkpoints/
+reports/generated/checkpoints/*
+!reports/generated/checkpoints/20260905T1712Z-final/
+!reports/generated/checkpoints/20260905T1712Z-final/**
