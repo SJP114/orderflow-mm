@@ -1,5 +1,8 @@
 # Order Flow, Adverse Selection, and Inventory-Aware Market Making
 
+[![CI](https://github.com/SJP114/orderflow-mm/actions/workflows/ci.yml/badge.svg)](https://github.com/SJP114/orderflow-mm/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 This repository studies two questions on BTC/USDT spot data:
 
 1. Do trade flow and top-of-book imbalance predict short-horizon mid-price moves out of sample?

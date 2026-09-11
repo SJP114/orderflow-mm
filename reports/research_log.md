@@ -376,3 +376,11 @@ and 29 of 29 final-checkpoint validations both under the system runtime and a fr
 locked project environment. A GitHub Actions workflow runs the same command after publication.
 Remote CI, repository visibility, licensing, and the release tag remain the only
 release-engineering steps requiring a user decision or external repository.
+
+## 2026-09-11 — Public v0.1.0 release
+
+The MIT-licensed project was published at `https://github.com/SJP114/orderflow-mm`. The initial
+`main` push retained the audited 62-file boundary: source, tests, documentation, evidence figures,
+and the 572 KB frozen result bundle are public, while the 281 MB local data directory remains
+ignored. GitHub Actions run #1 completed successfully against commit `0c15c17`, reproducing the
+locked release-smoke workflow on Ubuntu.

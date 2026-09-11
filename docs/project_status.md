@@ -1,7 +1,8 @@
 # Project Status, Workload, and Delivery Timeline
 
-Status date: 2026-09-10  
+Status date: 2026-09-11
 Frozen checkpoint: `20260905T1712Z-final`
+Public repository: `https://github.com/SJP114/orderflow-mm`
 
 ## Current completion
 
@@ -13,12 +14,11 @@ Frozen checkpoint: `20260905T1712Z-final`
 | Inventory-aware replay and sensitivity | 15% | 100% | Four core scenarios and 50-case grid |
 | Independent validation and tests | 10% | 100% | 29/29 checkpoint checks; 36 unit tests |
 | Research narrative and portfolio copy | 15% | 100% | Final report, figures, and quantified resume bullets complete |
-| Public-repository packaging | 15% | 95% | Clean locked-env smoke, CI, sample pipeline, frozen bundle, and README pass; remote release pending |
+| Public-repository packaging | 15% | 100% | Public MIT repository, locked-env smoke, CI, sample pipeline, frozen bundle, and README pass |
 
-**Weighted technical completion: approximately 99%.** The research MVP and local release candidate
-are complete. Public visibility, the `orderflow-mm` repository name, and the MIT license are now
-selected. The remaining technical work is the initial remote push and CI run. Resume insertion and
-interview rehearsal remain separate application-integration tasks.
+**Weighted technical completion: 100%.** The research MVP and public release are complete. The
+initial `main` push passed GitHub Actions on the first run. Resume insertion and interview rehearsal
+remain separate application-integration tasks rather than project-engineering blockers.
 
 Current implementation footprint: 15 source modules and 12 test modules, totaling 3,422 lines of
 source/test Python, plus 337 lines of release and figure scripts. The suite contains 36 tests,
@@ -49,18 +49,16 @@ implementation time.
 
 | Priority | Deliverable | Estimate | Dependency |
 |---|---|---:|---|
-| P0 | Initial versioned snapshot, remote CI confirmation, release tag | 0.5–1 h | GitHub sign-in and remote creation required |
 | P1 | Insert bullets into the actual resume and tune for target roles | 1–2 h | Requires the user's resume and target job descriptions |
 | P1 | Interview walkthrough and likely-question drill | 1.5–2 h | User participation |
-| **Core remaining total** |  | **3–5 h** |  |
+| **Application-integration total** |  | **2.5–4 h** |  |
 
 ## Recommended timeline
 
-### Session 1 — remote release (0.5–1 hour)
+### Completed — remote release
 
-- Create the public `orderflow-mm` GitHub repository under `SJP114` and publish the MIT-licensed
-  first versioned snapshot.
-- Confirm the provided CI workflow passes on the remote host and create the release tag.
+- Published the MIT-licensed repository under `SJP114/orderflow-mm`.
+- Confirmed the locked release-smoke workflow passes on GitHub Actions.
 
 ### Session 2 — application integration (1–2 hours)
 
@@ -73,9 +71,8 @@ implementation time.
 - Prepare concise answers on gaps, leakage, queue assumptions, negative results, and why the
   predictive model did not become profitable.
 
-At two focused hours per day, the full application package can be ready in two to three days. The
-code and research report are ready now for local review; publishing and resume changes wait on the
-user choices above.
+At two focused hours per day, the remaining application integration can be finished in one to two
+days. The code, research report, and public repository are ready now.
 
 ## Optional extension, not required before applying
 
